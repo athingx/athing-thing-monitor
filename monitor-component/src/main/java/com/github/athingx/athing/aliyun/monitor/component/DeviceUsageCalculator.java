@@ -1,7 +1,7 @@
-package com.github.athingx.athing.aliyun.monitor.core;
+package com.github.athingx.athing.aliyun.monitor.component;
 
 import com.github.athingx.athing.aliyun.monitor.api.usage.*;
-import com.github.athingx.athing.aliyun.monitor.core.util.FormatUtils;
+import com.github.athingx.athing.aliyun.monitor.component.util.FormatUtils;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.CentralProcessor.TickType;

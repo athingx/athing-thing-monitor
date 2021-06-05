@@ -1,7 +1,7 @@
 package com.github.athingx.athing.aliyun.monitor.boot;
 
 import com.github.athingx.athing.aliyun.monitor.api.MonitorThingCom;
-import com.github.athingx.athing.aliyun.monitor.core.DefaultMonitorThingCom;
+import com.github.athingx.athing.aliyun.monitor.component.DefaultMonitorThingCom;
 import com.github.athingx.athing.standard.component.ThingCom;
 import com.github.athingx.athing.standard.thing.boot.BootArguments;
 import com.github.athingx.athing.standard.thing.boot.ThingComBoot;

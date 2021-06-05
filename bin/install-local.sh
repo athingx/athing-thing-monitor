@@ -1,6 +1,6 @@
 #!/bin/bash
 
-projects[i++]="com.github.athingx.athing.aliyun.monitor:monitor-api"
+projects[i++]="com.github.athingx.athing.aliyun.monitor:monitor-component"
 
 mvn clean install \
   -f ../pom.xml \

@@ -1,4 +1,4 @@
-package com.github.athingx.athing.aliyun.monitor.core.util;
+package com.github.athingx.athing.aliyun.monitor.component.util;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

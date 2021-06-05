@@ -1,4 +1,4 @@
-package com.github.athingx.athing.aliyun.monitor.core;
+package com.github.athingx.athing.aliyun.monitor.component;
 
 import com.github.athingx.athing.aliyun.monitor.api.MonitorThingCom;
 import com.github.athingx.athing.aliyun.monitor.api.info.*;

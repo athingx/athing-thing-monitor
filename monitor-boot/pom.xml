@@ -51,7 +51,7 @@
         </dependency>
         <dependency>
             <groupId>com.github.athingx.athing.aliyun.monitor</groupId>
-            <artifactId>monitor-core</artifactId>
+            <artifactId>monitor-component</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>
