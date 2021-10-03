@@ -10,7 +10,7 @@ import oshi.hardware.GlobalMemory;
 /**
  * 设备监控实现
  */
-public class DefaultMonitorThingCom implements MonitorThingCom {
+public class MonitorThingComImpl implements MonitorThingCom {
 
     private final SystemInfo systemInfo = new SystemInfo();
     private final DeviceUsageCalculator deviceUsageCalculator = new DeviceUsageCalculator(systemInfo);
