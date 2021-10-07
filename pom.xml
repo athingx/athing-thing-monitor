@@ -95,6 +95,6 @@
 
     <modules>
         <module>monitor-api</module>
-        <module>monitor-component</module>
+        <module>monitor-thing</module>
     </modules>
 </project>

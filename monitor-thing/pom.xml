@@ -8,12 +8,12 @@
         <artifactId>monitor</artifactId>
         <version>${revision}</version>
     </parent>
-    <artifactId>monitor-component</artifactId>
+    <artifactId>monitor-thing</artifactId>
     <name>${project.artifactId}</name>
     <dependencies>
         <dependency>
             <groupId>com.github.athingx.athing.standard</groupId>
-            <artifactId>athing-standard-component</artifactId>
+            <artifactId>athing-standard-thing</artifactId>
             <version>${athing.version}</version>
         </dependency>
         <dependency>

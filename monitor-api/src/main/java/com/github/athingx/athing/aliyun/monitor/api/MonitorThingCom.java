@@ -2,9 +2,9 @@ package com.github.athingx.athing.aliyun.monitor.api;
 
 import com.github.athingx.athing.aliyun.monitor.api.info.*;
 import com.github.athingx.athing.aliyun.monitor.api.usage.*;
-import com.github.athingx.athing.standard.component.ThingCom;
-import com.github.athingx.athing.standard.component.annotation.ThCom;
-import com.github.athingx.athing.standard.component.annotation.ThProperty;
+import com.github.athingx.athing.standard.api.ThingCom;
+import com.github.athingx.athing.standard.api.annotation.ThCom;
+import com.github.athingx.athing.standard.api.annotation.ThProperty;
 
 /**
  * 设备组件
