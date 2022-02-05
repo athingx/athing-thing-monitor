@@ -24,7 +24,7 @@
     </developers>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.athingx.athing.aliyun.monitor</groupId>
+    <groupId>io.github.athingx.athing.aliyun.monitor</groupId>
     <artifactId>monitor</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
@@ -94,7 +94,7 @@
     </build>
 
     <modules>
-        <module>monitor-api</module>
         <module>monitor-thing</module>
+        <module>monitor-thing-impl</module>
     </modules>
 </project>

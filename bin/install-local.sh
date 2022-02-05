@@ -1,7 +1,7 @@
 #!/bin/bash
 
-projects[i++]="com.github.athingx.athing.aliyun.monitor:monitor-api"
-projects[i++]="com.github.athingx.athing.aliyun.monitor:monitor-thing"
+projects[i++]="io.github.athingx.athing.aliyun.monitor:monitor-thing"
+projects[i++]="io.github.athingx.athing.aliyun.monitor:monitor-thing-impl"
 
 mvn clean install \
   -f ../pom.xml \
