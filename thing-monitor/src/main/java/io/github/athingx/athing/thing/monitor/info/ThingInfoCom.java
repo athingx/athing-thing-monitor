@@ -7,8 +7,8 @@ import io.github.athingx.athing.standard.component.annotation.ThProperty;
 /**
  * 设备信息组件
  */
-@ThCom(id = InfoThingCom.THING_COM_ID, name = "thing info monitor", desc = "information of thing")
-public interface InfoThingCom extends ThingCom {
+@ThCom(id = ThingInfoCom.THING_COM_ID, name = "thing info monitor", desc = "information of thing")
+public interface ThingInfoCom extends ThingCom {
 
     String THING_COM_ID = "athing_monitor_info";
 

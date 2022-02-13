@@ -1,14 +1,14 @@
 package io.github.athingx.athing.thing.monitor.general.info;
 
 import io.github.athingx.athing.thing.monitor.info.Info;
-import io.github.athingx.athing.thing.monitor.info.InfoThingCom;
+import io.github.athingx.athing.thing.monitor.info.ThingInfoCom;
 import oshi.SystemInfo;
 import oshi.hardware.*;
 import oshi.software.os.OperatingSystem;
 
 import java.util.Arrays;
 
-public class InfoThingComImpl implements InfoThingCom {
+public class ThingInfoComImpl implements ThingInfoCom {
 
     private final SystemInfo info = new SystemInfo();
     private final OperatingSystem os = info.getOperatingSystem();

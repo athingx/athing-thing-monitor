@@ -400,7 +400,7 @@ public class Usage {
         private final Identifier identifier;
 
         Item(String propertyId) {
-            this.identifier = Identifier.toIdentifier(UsageThingCom.THING_COM_ID, propertyId);
+            this.identifier = Identifier.toIdentifier(ThingUsageCom.THING_COM_ID, propertyId);
         }
 
         public Identifier getIdentifier() {

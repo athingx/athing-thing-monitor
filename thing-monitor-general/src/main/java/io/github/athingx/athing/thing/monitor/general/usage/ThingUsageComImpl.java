@@ -2,7 +2,7 @@ package io.github.athingx.athing.thing.monitor.general.usage;
 
 import io.github.athingx.athing.thing.monitor.general.util.MathUtils;
 import io.github.athingx.athing.thing.monitor.usage.Usage;
-import io.github.athingx.athing.thing.monitor.usage.UsageThingCom;
+import io.github.athingx.athing.thing.monitor.usage.ThingUsageCom;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.CentralProcessor.TickType;
@@ -13,7 +13,7 @@ import oshi.software.os.OperatingSystem;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
-public class UsageThingComImpl implements UsageThingCom {
+public class ThingUsageComImpl implements ThingUsageCom {
 
     private final SystemInfo info = new SystemInfo();
     private final OperatingSystem os = info.getOperatingSystem();

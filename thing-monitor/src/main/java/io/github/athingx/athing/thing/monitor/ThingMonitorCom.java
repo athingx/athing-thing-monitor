@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 监控组件
  */
-public interface MonitorThingCom extends ThingCom {
+public interface ThingMonitorCom extends ThingCom {
 
     /**
      * 上报信息

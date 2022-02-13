@@ -590,7 +590,7 @@ public class Info {
         private final Identifier identifier;
 
         Item(String propertyId) {
-            this.identifier = Identifier.toIdentifier(InfoThingCom.THING_COM_ID, propertyId);
+            this.identifier = Identifier.toIdentifier(ThingInfoCom.THING_COM_ID, propertyId);
         }
 
         public Identifier getIdentifier() {

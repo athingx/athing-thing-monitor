@@ -1,10 +1,10 @@
 package io.github.athingx.athing.thing.monitor.general;
 
-import io.github.athingx.athing.thing.monitor.MonitorThingCom;
+import io.github.athingx.athing.thing.monitor.ThingMonitorCom;
 import io.github.athingx.athing.thing.monitor.info.Info;
-import io.github.athingx.athing.thing.monitor.info.InfoThingCom;
+import io.github.athingx.athing.thing.monitor.info.ThingInfoCom;
 import io.github.athingx.athing.thing.monitor.usage.Usage;
-import io.github.athingx.athing.thing.monitor.usage.UsageThingCom;
+import io.github.athingx.athing.thing.monitor.usage.ThingUsageCom;
 import io.github.athingx.athing.standard.component.Identifier;
 import io.github.athingx.athing.standard.thing.Thing;
 import io.github.athingx.athing.standard.thing.ThingFuture;
@@ -20,15 +20,15 @@ import java.util.concurrent.TimeUnit;
 import static io.github.athingx.athing.standard.thing.op.executor.ScheduleType.FIX_DELAY;
 import static java.util.Arrays.stream;
 
-public class MonitorThingComImpl implements MonitorThingCom {
+public class ThingMonitorComImpl implements ThingMonitorCom {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Inject
-    private InfoThingCom info;
+    private ThingInfoCom info;
 
     @Inject
-    private UsageThingCom usage;
+    private ThingUsageCom usage;
 
     @Inject
     private Thing thing;
