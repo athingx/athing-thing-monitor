@@ -28,7 +28,7 @@ public class ThingInfoComImpl implements ThingInfoCom {
     public Info.Jvm getJvm() {
         return new Info.Jvm(
                 System.getProperty("java.version"),
-                System.getProperty("java.vendor"),
+                System.getProperty("java.home"),
                 Runtime.getRuntime().maxMemory(),
                 Runtime.getRuntime().totalMemory(),
                 Runtime.getRuntime().freeMemory()
