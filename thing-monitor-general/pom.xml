@@ -15,7 +15,7 @@
         <finalName>${project.name}-${project.version}</finalName>
         <resources>
             <resource>
-                <directory>../modular-thing-impl/src/main/resources</directory>
+                <directory>../thing-monitor-general/src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
                     <include>io/github/athingx/athing/thing/monitor/general/thing-boot.properties</include>
