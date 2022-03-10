@@ -5,7 +5,6 @@ import io.github.athingx.athing.thing.monitor.general.usage.ThingUsageComImpl;
 import io.github.athingx.athing.standard.component.ThingCom;
 import io.github.athingx.athing.standard.thing.boot.ThingBoot;
 import io.github.athingx.athing.standard.thing.boot.ThingBootArgument;
-import org.kohsuke.MetaInfServices;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -13,7 +12,6 @@ import java.util.Properties;
 /**
  * 设备监控组件引导程序
  */
-@MetaInfServices
 public class ThingMonitorBoot implements ThingBoot {
 
     @Override
