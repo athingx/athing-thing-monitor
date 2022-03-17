@@ -3,14 +3,13 @@ package io.github.athingx.athing.thing.monitor.general;
 import io.github.athingx.athing.aliyun.thing.runtime.ThingRuntime;
 import io.github.athingx.athing.aliyun.thing.runtime.specs.DumpTo;
 import io.github.athingx.athing.standard.component.Identifier;
-import io.github.athingx.athing.standard.thing.boot.ThingBoot;
 import io.github.athingx.athing.standard.thing.op.OpReply;
 import io.github.athingx.athing.standard.thing.op.ThingOpFuture;
 import io.github.athingx.athing.thing.monitor.ThingMonitorCom;
 import io.github.athingx.athing.thing.monitor.info.Info;
 import io.github.athingx.athing.thing.monitor.info.ThingInfoCom;
-import io.github.athingx.athing.thing.monitor.usage.Usage;
 import io.github.athingx.athing.thing.monitor.usage.ThingUsageCom;
+import io.github.athingx.athing.thing.monitor.usage.Usage;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -29,14 +28,6 @@ public class ThingMonitorComTestCase extends ThingSupport {
     public void debug$thing$monitor$schedule_report_usage$success() throws Exception {
         thing.getUniqueThingCom(ThingMonitorCom.class).scheduleReportUsage(30, SECONDS, Usage.Item.values())
                 .sync();
-    }
-
-    @Test
-    public void test$thing$monitor$boot() {
-        final ThingBoot boot = new ThingMonitorBoot();
-        Assert.assertEquals("${project.groupId}", boot.getProperties().getProperty(ThingBoot.PROP_GROUP));
-        Assert.assertEquals("${project.artifactId}", boot.getProperties().getProperty(ThingBoot.PROP_ARTIFACT));
-        Assert.assertEquals("${project.version}", boot.getProperties().getProperty(ThingBoot.PROP_VERSION));
     }
 
     @Test
