@@ -1,16 +1,16 @@
 package io.github.athingx.athing.thing.monitor.general;
 
-import io.github.athingx.athing.thing.monitor.ThingMonitorCom;
-import io.github.athingx.athing.thing.monitor.info.Info;
-import io.github.athingx.athing.thing.monitor.info.ThingInfoCom;
-import io.github.athingx.athing.thing.monitor.usage.Usage;
-import io.github.athingx.athing.thing.monitor.usage.ThingUsageCom;
 import io.github.athingx.athing.standard.component.Identifier;
 import io.github.athingx.athing.standard.thing.Thing;
 import io.github.athingx.athing.standard.thing.ThingFuture;
-import io.github.athingx.athing.standard.thing.boot.Inject;
+import io.github.athingx.athing.standard.thing.boot.ThInject;
 import io.github.athingx.athing.standard.thing.op.OpReply;
 import io.github.athingx.athing.standard.thing.op.ThingOpFuture;
+import io.github.athingx.athing.thing.monitor.ThingMonitorCom;
+import io.github.athingx.athing.thing.monitor.info.Info;
+import io.github.athingx.athing.thing.monitor.info.ThingInfoCom;
+import io.github.athingx.athing.thing.monitor.usage.ThingUsageCom;
+import io.github.athingx.athing.thing.monitor.usage.Usage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,17 +20,17 @@ import java.util.concurrent.TimeUnit;
 import static io.github.athingx.athing.standard.thing.op.executor.ScheduleType.FIX_DELAY;
 import static java.util.Arrays.stream;
 
-public class ThingMonitorComImpl implements ThingMonitorCom {
+class ThingMonitorComImpl implements ThingMonitorCom {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Inject
+    @ThInject
     private ThingInfoCom info;
 
-    @Inject
+    @ThInject
     private ThingUsageCom usage;
 
-    @Inject
+    @ThInject
     private Thing thing;
 
     @Override
