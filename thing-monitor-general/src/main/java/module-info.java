@@ -1,6 +1,6 @@
 module io.github.athingx.athing.thing.monitor.general {
 
-    requires io.github.athingx.athing.thing.monitor;
+    requires transitive io.github.athingx.athing.thing.monitor;
     requires io.github.athingx.athing.standard.thing;
     requires com.github.oshi;
     requires org.slf4j;
