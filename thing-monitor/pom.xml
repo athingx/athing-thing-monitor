@@ -15,7 +15,6 @@
             <groupId>io.github.athingx.athing.standard</groupId>
             <artifactId>athing-standard-thing</artifactId>
             <version>${athing.version}</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

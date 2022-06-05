@@ -1,4 +1,4 @@
-package io.github.athingx.athing.thing.monitor.general.usage;
+package io.github.athingx.athing.thing.monitor.general;
 
 import io.github.athingx.athing.thing.monitor.general.util.MathUtils;
 import io.github.athingx.athing.thing.monitor.usage.Usage;
@@ -13,7 +13,7 @@ import oshi.software.os.OperatingSystem;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
-public class ThingUsageComImpl implements ThingUsageCom {
+public class DefaultThingUsageCom implements ThingUsageCom {
 
     private final SystemInfo info = new SystemInfo();
     private final OperatingSystem os = info.getOperatingSystem();

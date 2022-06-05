@@ -3,6 +3,8 @@ package io.github.athingx.athing.thing.monitor.general;
 import io.github.athingx.athing.aliyun.thing.ThingBuilder;
 import io.github.athingx.athing.aliyun.thing.runtime.access.ThingAccess;
 import io.github.athingx.athing.standard.thing.Thing;
+import io.github.athingx.athing.thing.monitor.info.ThingInfoCom;
+import io.github.athingx.athing.thing.monitor.usage.ThingUsageCom;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
@@ -11,6 +13,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URI;
 import java.util.Properties;
+import java.util.concurrent.Executors;
 
 import static java.lang.String.format;
 
@@ -28,6 +31,8 @@ public class ThingSupport {
     );
 
     protected static Thing thing;
+    protected static ThingInfoCom thingInfoCom;
+    protected static ThingUsageCom thingUsageCom;
 
     @BeforeClass
     public static void initialization() throws Exception {
@@ -51,8 +56,10 @@ public class ThingSupport {
 
     private static Thing initPuppetThing() throws Exception {
         final Thing thing = new ThingBuilder(new URI($("athing.thing.server-url")), THING_ACCESS)
-                .load((productId, thingId) -> new ThingMonitorBoot().boot(PRODUCT_ID, THING_ID))
+                .executor(Executors.newFixedThreadPool(20))
                 .build();
+        thing.load(thingInfoCom = new DefaultThingInfoCom());
+        thing.load(thingUsageCom = new DefaultThingUsageCom());
         reconnect(thing);
         return thing;
     }
