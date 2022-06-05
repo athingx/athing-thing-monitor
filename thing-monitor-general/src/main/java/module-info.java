@@ -1,4 +1,4 @@
-module io.github.athingx.athing.thing.monitor.aliyun {
+module io.github.athingx.athing.thing.monitor.general {
 
     requires io.github.athingx.athing.thing.monitor;
     requires io.github.athingx.athing.standard.thing;
