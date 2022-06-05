@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>io.github.athingx.athing.standard</groupId>
-            <artifactId>athing-standard-thing</artifactId>
+            <artifactId>athing-standard-component</artifactId>
             <version>${athing.version}</version>
         </dependency>
     </dependencies>
